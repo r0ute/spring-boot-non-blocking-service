@@ -1,2 +1,5 @@
 service:
   delay: 1000
+server:
+  tomcat:
+    max-threads: 50
