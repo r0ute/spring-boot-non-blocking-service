@@ -7,9 +7,9 @@ class BlockingSimulation extends Simulation {
 
   val httpConf = http.baseUrl("http://localhost:8080")
 
-  val scn = scenario("Non-blocking Simulation")
-    .exec(http("non-blocking-request")
-      .get("/non-blocking")
+  val scn = scenario("Blocking Simulation")
+    .exec(http("blocking-request")
+      .get("/blocking")
       .check(status.is(200))
     )
 
